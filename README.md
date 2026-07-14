@@ -10,6 +10,7 @@ This project features a real-time output configuration for the **Arduino IDE Ser
 * **Wireless BLE Emulation:** Acts as a standard Bluetooth HID mouse. No extra USB receiver or software needed on the host machine.
 * **Burst Click Action:** 1 short physical button press = $X$ high-speed virtual clicks (fully adjustable via `CLICKS_PER_PRESS`).
 * **Hardware Debouncing:** Safe state-change detection to prevent accidental double-clicks from button switch bounce.
+* **Type-Cast Fix Compiled:** Uses explicit `(MouseButton)1` casting to bypass library-specific naming differences and guarantee successful compilation.
 * **Serial Plotter Support:** Generates clean square wave pulses labeled `CLIC` in the Arduino IDE Serial Plotter for easy debugging.
 
 ---
