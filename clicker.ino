@@ -32,7 +32,7 @@ void loop() {
       if (!bleMouse.isConnected()) break;
 
       // הדפסה לפלוטר (קפיצה מהירה למעלה)
-      Serial.println("CLIC:1");
+      Serial.println("CLICK:1");
       
       // שליחת הקליק למחשב
       bleMouse.press((MouseButton)1);   
@@ -40,7 +40,7 @@ void loop() {
       bleMouse.release((MouseButton)1); 
       
       // השהייה קלה בפלוטר כדי שנספיק לראות את הירידה של הגרף
-      Serial.println("CLIC:0");
+      Serial.println("CLICK:0");
       
       // השהייה קצרצרה בין קליק לקליק בתוך המטח (במילישניות)
       delay(10); 
@@ -50,7 +50,7 @@ void loop() {
     delay(50); 
   } else {
     // אם לא לוחצים, הגרף נשאר על 0
-    Serial.println("CLIC:0");
+    Serial.println("CLICK:0");
     delay(10);
   }
 
